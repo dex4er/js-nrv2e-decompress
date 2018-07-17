@@ -1,0 +1,69 @@
+{
+  "name": "nrv2e-decompress",
+  "version": "0.1.0",
+  "description": "Decompress with NRV2E algorithm",
+  "main": "lib/nrv2e-decompress.js",
+  "typings": "lib/nrv2e-decompress.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dex4er/js-nrv2e-decompress"
+  },
+  "keywords": [
+    "2d",
+    "aztec",
+    "aztec2d",
+    "decode",
+    "decoder",
+    "decompress",
+    "nrv2e"
+  ],
+  "author": "Piotr Roszatycki",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dex4er/js-nrv2e-decompress/issues"
+  },
+  "homepage": "http://github.com/dex4er/js-nrv2e-decompress",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.1.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "markdownlint-cli": "^0.9.0",
+    "standard": "^11.0.1",
+    "tap": "^12.0.1",
+    "tap-given": "^0.6.0",
+    "tslint": "^5.10.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "pretest": "eslint . && tsc --noEmit --pretty && tslint -t stylish -p . && echo markdownlint *.md",
+    "test": "npm run test:api",
+    "test:api": "tap test/*.js",
+    "test:coverage": "npm run test:api -- --coverage"
+  },
+  "standard": {
+    "globals": [
+      "And",
+      "After",
+      "Before",
+      "Feature",
+      "Given",
+      "Scenario",
+      "Then",
+      "When"
+    ]
+  },
+  "nyc": {
+    "exclude": []
+  }
+}
