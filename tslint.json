@@ -8,6 +8,7 @@
     "interface-name": false,
     "max-line-length": false,
     "member-access": [true, "no-public"],
-    "no-console": [true, "log"]
+    "no-console": [true, "log"],
+    "no-unused-variable": false
   }
 }
