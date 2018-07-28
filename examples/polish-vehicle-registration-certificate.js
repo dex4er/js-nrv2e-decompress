@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env node
 
 const nrv2eDecompress = require('../lib/nrv2e-decompress')
 
