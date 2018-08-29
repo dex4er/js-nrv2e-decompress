@@ -5,7 +5,6 @@
   ],
   "rules": {
     "no-bitwise": false, // we do bit operations
-    // "interface-name": false, //
     "max-line-length": false, // looooong lines are not a problem with good text editor
     "member-access": [true, "no-public"], // public is implicit
     "no-console": [true, "log"], // `console.log` is for temporary debugging only
