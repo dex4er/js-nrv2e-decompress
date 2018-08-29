@@ -1,1 +1,1 @@
-module.exports = require('./lib/nrv2e-decompress.js')
+module.exports = require('./lib/nrv2e-decompress')

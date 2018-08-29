@@ -1,35 +1,23 @@
-/**
- * @class
- * @param {Buffer} buffer
- * @param {number} bufferBits
- */
-class BitReader {
-  constructor (buffer, bufferBits) {
-    bufferBits = bufferBits || 8
+/// <reference types="node" />
 
+export type BufferBits = 8 | 16 | 32
+
+export class BitReader {
+  protected offset = 0
+  protected currentBit = 0
+  protected currentBuffer = 0
+
+  constructor (protected buffer: Buffer, protected bufferBits: BufferBits = 8) {
     if (bufferBits !== 8 && bufferBits !== 16 && bufferBits !== 32) {
       throw new Error('bufferBits should be 8, 16 or 32')
     }
-
-    this.buffer = buffer
-    this.bufferBits = bufferBits
-
-    this.offset = 0
-    this.currentBit = 0
-    this.currentBuffer = 0
   }
 
-  /**
-   * @property {boolean} ended
-   */
-  get ended () {
+  get ended (): boolean {
     return this.offset >= this.buffer.length && this.currentBit === 0
   }
 
-  /**
-   * @returns {number}
-   */
-  readBit () {
+  readBit (): number {
     if (this.currentBit === 0) {
       this.currentBuffer = 0
       for (let bufferByte = this.bufferBits / 8 - 1; bufferByte >= 0; bufferByte--) {
@@ -40,14 +28,9 @@ class BitReader {
     return ((this.currentBuffer >> --this.currentBit) & 1)
   }
 
-  /**
-   * @returns {number}
-   */
-  readByte () {
+  readByte (): number {
     return this.buffer.readUInt8(this.offset++)
   }
 }
 
-BitReader.BitReader = BitReader
-
-module.exports = BitReader
+export default BitReader

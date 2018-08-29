@@ -1,20 +1,12 @@
-'use strict'
+import { And, Feature, Given, Scenario, Then, When } from './lib/steps'
 
-const t = require('tap')
-require('tap-given')(t)
-
-const chai = require('chai')
-const chaiAsPromised = require('chai-as-promised')
-chai.use(chaiAsPromised)
-chai.should()
-
-const BitReader = require('../lib/bit-reader')
+import BitReader from '../src/bit-reader'
 
 Feature('Test BitReader', () => {
   Scenario('Read bytes from BitReader with 8 bit buffer', () => {
-    let bits
-    let buffer
-    let byte
+    let bits: BitReader
+    let buffer: Buffer
+    let byte: number
 
     Given('buffer with 4 bytes', () => {
       buffer = Buffer.from([1, 2, 3, 4])
@@ -40,10 +32,10 @@ Feature('Test BitReader', () => {
   })
 
   Scenario('Read bits and bytes from BitReader with 8 bit buffer', () => {
-    let bit
-    let bits
-    let buffer
-    let byte
+    let bit: number
+    let bits: BitReader
+    let buffer: Buffer
+    let byte: number
 
     Given('buffer with 4 bytes', () => {
       buffer = Buffer.from([1, 2, 3, 4])
@@ -95,9 +87,9 @@ Feature('Test BitReader', () => {
   })
 
   Scenario('Read bytes from BitReader with 16 bit buffer', () => {
-    let bits
-    let buffer
-    let byte
+    let bits: BitReader
+    let buffer: Buffer
+    let byte: number
 
     Given('buffer with 4 bytes', () => {
       buffer = Buffer.from([1, 2, 3, 4])
@@ -123,10 +115,10 @@ Feature('Test BitReader', () => {
   })
 
   Scenario('Read bits and bytes from BitReader with 16 bit buffer', () => {
-    let bit
-    let bits
-    let buffer
-    let byte
+    let bit: number
+    let bits: BitReader
+    let buffer: Buffer
+    let byte: number
 
     Given('buffer with 4 bytes', () => {
       buffer = Buffer.from([1, 2, 3, 4])
@@ -168,9 +160,9 @@ Feature('Test BitReader', () => {
   })
 
   Scenario('Read bytes from BitReader with 32 bit buffer', () => {
-    let bits
-    let buffer
-    let byte
+    let bits: BitReader
+    let buffer: Buffer
+    let byte: number
 
     Given('buffer with 4 bytes', () => {
       buffer = Buffer.from([1, 2, 3, 4])
@@ -196,9 +188,9 @@ Feature('Test BitReader', () => {
   })
 
   Scenario('Read bits and bytes from BitReader with 32 bit buffer', () => {
-    let bit
-    let bits
-    let buffer
+    let bit: number
+    let bits: BitReader
+    let buffer: Buffer
 
     Given('buffer with 4 bytes', () => {
       buffer = Buffer.from([1, 2, 3, 4])

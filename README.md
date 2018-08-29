@@ -34,6 +34,18 @@ _Typescript:_
 import nrv2eDecompress from 'nrv2e-decompress'
 ```
 
+_For transpiling this module with own settings:_
+
+```json
+{
+  "compilerOptions": {
+    "paths": {
+      "nrv2e-decompress": ["node_modules/nrv2e-decompress/src/nrv2e-decompress"]
+    }
+  }
+}
+```
+
 ### nrv2eDecompress
 
 ```js

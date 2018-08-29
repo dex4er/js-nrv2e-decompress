@@ -1,14 +1,9 @@
-const BitReader = require('./bit-reader')
+/// <reference types="node" />
 
-/**
- * @function
- * @param {Buffer} input
- * @param {Buffer} output
- * @param {number} [bufferBits]
- */
-function nrv2eDecompress (input, output, bufferBits) {
-  bufferBits = bufferBits || 8
+import { BitReader, BufferBits } from './bit-reader'
+export { BitReader, BufferBits } from './bit-reader'
 
+export function nrv2eDecompress (input: Buffer, output: Buffer, bufferBits: BufferBits = 8): void {
   const bits = new BitReader(input, bufferBits)
 
   let outputPos = 0
@@ -78,6 +73,4 @@ function nrv2eDecompress (input, output, bufferBits) {
   }
 }
 
-nrv2eDecompress.nrv2eDecompress = nrv2eDecompress
-
-module.exports = nrv2eDecompress
+export default nrv2eDecompress
