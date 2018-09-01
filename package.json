@@ -1,6 +1,6 @@
 {
   "name": "nrv2e-decompress",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Decompress with NRV2E algorithm",
   "main": "lib/nrv2e-decompress.js",
   "typings": "lib/nrv2e-decompress.d.ts",

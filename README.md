@@ -25,7 +25,7 @@ npm install -D @types/node
 ## Usage
 
 ```js
-const nrv2eDecompress = require('nrv2e-decompress')
+const { nrv2eDecompress } = require('nrv2e-decompress')
 ```
 
 _Typescript:_
@@ -34,7 +34,7 @@ _Typescript:_
 import nrv2eDecompress from 'nrv2e-decompress'
 ```
 
-_For transpiling this module with own settings:_
+Transpiling this module with own settings in `tsconfig.json`:
 
 ```json
 {
