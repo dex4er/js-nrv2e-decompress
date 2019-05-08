@@ -79,7 +79,7 @@ const textOutput = utf16Output.toString('utf16le')
 
 ## License
 
-Copyright (c) 2018 Piotr Roszatycki <piotr.roszatycki@gmail.com>
+Copyright (c) 2018-2019 Piotr Roszatycki <piotr.roszatycki@gmail.com>
 
 This code is based on UCL data compression library:
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.0 2019-05-08
+
+* Recompiled as ES5 module.
+
 ## v0.2.1 2018-09-01
 
 * Use `const { foo } = require('module')` syntax now.
