@@ -1,4 +1,4 @@
-import { And, Feature, Given, Scenario, Then, When } from './lib/steps'
+import {And, Feature, Given, Scenario, Then, When} from './lib/steps'
 
 import BitReader from '../src/bit-reader'
 

@@ -3,9 +3,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "importHelpers": true,
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
     "module": "commonjs",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -14,13 +12,7 @@
     "outDir": "./lib",
     "target": "es6",
     "strict": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "typeRoots": ["node_modules/@types"]
   },
-  "exclude": [
-    "./examples/**/*",
-    "./lib/**/*",
-    "./test/**/*"
-  ]
+  "exclude": ["./examples/**/*", "./lib/**/*", "./test/**/*"]
 }
