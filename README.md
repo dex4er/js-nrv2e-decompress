@@ -8,7 +8,7 @@ Decompress with NRV2E algorithm.
 
 ## Requirements
 
-This module requires ES6 with Node >= 6.
+This module requires ES5 with Node >= 4.
 
 ## Installation
 
