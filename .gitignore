@@ -1,6 +1,7 @@
 *-ts.js
 
 *.gz
+*.log
 *.tgz
 
 ts-node-*
