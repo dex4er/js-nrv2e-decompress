@@ -24,7 +24,7 @@
   },
   "homepage": "http://github.com/dex4er/js-nrv2e-decompress",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=v14.18.1"
   },
   "dependencies": {},
   "devDependencies": {
