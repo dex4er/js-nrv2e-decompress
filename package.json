@@ -46,7 +46,6 @@
     "c8": "^7.10.0",
     "chai": "^4.3.4",
     "coveralls": "^3.1.1",
-    "cross-env": "^7.0.3",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
@@ -57,7 +56,6 @@
     "mocha-steps": "^1.3.0",
     "prettier": "^2.4.1",
     "shx": "^0.3.2",
-    "source-map-support": "^0.5.20",
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },
@@ -78,13 +76,5 @@
     "test": "npm run test:spec",
     "test:spec": "mocha",
     "test:coverage": "c8 --no-clean --reporter=lcov npm run test:spec && c8 report --reporter=text-summary --color"
-  },
-  "nyc": {
-    "extension": [
-      ".ts"
-    ],
-    "exclude": [
-      "**/*.d.ts"
-    ]
   }
 }
