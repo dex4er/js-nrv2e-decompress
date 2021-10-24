@@ -1,6 +1,6 @@
-import {And, Feature, Given, Scenario, Then, When} from './lib/steps'
+import {And, Feature, Given, Scenario, Then, When} from './lib/steps.js'
 
-import BitReader from '../src/bit-reader'
+import BitReader from '../src/bit-reader.js'
 
 Feature('Test BitReader', () => {
   Scenario('Read bytes from BitReader with 8 bit buffer', () => {
