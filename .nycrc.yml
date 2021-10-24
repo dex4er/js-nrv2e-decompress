@@ -1,9 +1,0 @@
-all: true
-cache: false
-exclude:
-  - '**/*.d.ts'
-  - 'examples/**'
-include:
-  - 'src/**'
-  - 'lib/**'
-sourceMap: true
