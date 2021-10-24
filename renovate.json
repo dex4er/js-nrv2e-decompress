@@ -7,9 +7,12 @@
     "group:monorepos",
     "group:testNonMajor"
   ],
-  "node": {
-    "enabled": false
-  },
+  "packageRules": [
+    {
+      "packageNames": ["node"],
+      "enabled": false
+    }
+  ],
   "rangeStrategy": "bump",
   "semanticCommits": false
 }
