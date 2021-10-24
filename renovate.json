@@ -7,6 +7,9 @@
     "group:monorepos",
     "group:testNonMajor"
   ],
+  "node": {
+    "enabled": false
+  },
   "rangeStrategy": "bump",
   "semanticCommits": false
 }
