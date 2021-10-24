@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {nrv2eDecompress} = require('../lib/nrv2e-decompress')
+import nrv2eDecompress from 'nrv2e-decompress'
 
 // Scanned from https://www.pwpw.pl/binaries/content/gallery/pwpwcms_pl/Dla_mediow/zdjecia_do_artykulow/2016/03/dsc_1548.jpg
 const b64Input =

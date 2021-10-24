@@ -1,14 +1,16 @@
 # nrv2e-decompress
 
 <!-- markdownlint-disable MD013 -->
+
 [![Build Status](https://secure.travis-ci.org/dex4er/js-nrv2e-decompress.svg)](http://travis-ci.org/dex4er/js-nrv2e-decompress) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-nrv2e-decompress/badge.svg)](https://coveralls.io/github/dex4er/js-nrv2e-decompress) [![npm](https://img.shields.io/npm/v/nrv2e-decompress.svg)](https://www.npmjs.com/package/nrv2e-decompress)
+
 <!-- markdownlint-enable MD013 -->
 
 Decompress with NRV2E algorithm.
 
 ## Requirements
 
-This module requires ES5 with Node >= 4.
+This is ESM module which requires ES2020 and Node >= 14.
 
 ## Installation
 
@@ -25,25 +27,7 @@ npm install -D @types/node
 ## Usage
 
 ```js
-const { nrv2eDecompress } = require('nrv2e-decompress')
-```
-
-_Typescript:_
-
-```ts
 import nrv2eDecompress from 'nrv2e-decompress'
-```
-
-Transpiling this module with own settings in `tsconfig.json`:
-
-```json
-{
-  "compilerOptions": {
-    "paths": {
-      "nrv2e-decompress": ["node_modules/nrv2e-decompress/src/nrv2e-decompress"]
-    }
-  }
-}
 ```
 
 ### nrv2eDecompress
@@ -54,10 +38,10 @@ nrv2eDecompress(input, output, bufferBits)
 
 _Arguments:_
 
-* `input` is a `Buffer` with compressed data
-* `output` is a `Buffer` from decompressed data and it have to be pre-allocated,
+- `input` is a `Buffer` with compressed data
+- `output` is a `Buffer` from decompressed data and it have to be pre-allocated,
   ie. with `Buffer.alloc` method
-* `bufferBits` is a number of control buffer bits: `8`, `16` or `32` (optional:
+- `bufferBits` is a number of control buffer bits: `8`, `16` or `32` (optional:
   default: `8`)
 
 _Example:_
@@ -79,7 +63,7 @@ const textOutput = utf16Output.toString('utf16le')
 
 ## License
 
-Copyright (c) 2018-2019 Piotr Roszatycki <piotr.roszatycki@gmail.com>
+Copyright (c) 2018-2021 Piotr Roszatycki <piotr.roszatycki@gmail.com>
 
 This code is based on UCL data compression library:
 

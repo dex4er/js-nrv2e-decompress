@@ -1,6 +1,6 @@
-import {And, Feature, Given, Scenario, Then, When} from './lib/steps'
+import {And, Feature, Given, Scenario, Then, When} from './lib/steps.js'
 
-import nrv2eDecompress from '../src/nrv2e-decompress'
+import nrv2eDecompress from '../src/nrv2e-decompress.js'
 
 Feature('Test nrv2eDecompress', () => {
   Scenario('Decompress file', () => {

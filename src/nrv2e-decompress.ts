@@ -1,7 +1,10 @@
 /// <reference types="node" />
 
-import {BitReader, BufferBits} from './bit-reader'
-export {BitReader, BufferBits} from './bit-reader'
+import {BitReader} from './bit-reader.js'
+import type {BufferBits} from './bit-reader.js'
+
+export {BitReader} from './bit-reader.js'
+export type {BufferBits} from './bit-reader.js'
 
 export function nrv2eDecompress(input: Buffer, output: Buffer, bufferBits: BufferBits = 8): void {
   const bits = new BitReader(input, bufferBits)
