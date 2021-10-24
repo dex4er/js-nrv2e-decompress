@@ -1,5 +1,5 @@
 import Mocha from 'mocha'
-import * as MochaSteps from "mocha-steps"
+import * as MochaSteps from 'mocha-steps'
 
 export function Feature(what: string, how: () => void): Mocha.Suite {
   return Mocha.describe('Feature: ' + what, how)

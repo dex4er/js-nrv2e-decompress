@@ -1,9 +1,9 @@
 all: true
 cache: false
 exclude:
-  - "**/*.d.ts"
-  - "examples/**"
+  - '**/*.d.ts'
+  - 'examples/**'
 include:
-  - "src/**"
-  - "lib/**"
+  - 'src/**'
+  - 'lib/**'
 sourceMap: true
