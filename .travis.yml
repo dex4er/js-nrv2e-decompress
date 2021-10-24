@@ -18,4 +18,4 @@ script:
     echo "reporter: dot" >> .mocharc.yml
   - npm run build
   - npm run ${NPM_RUN_SCRIPT:-test:spec} -- ${MOCHA_ARGS}
-  - if [ "$NPM_RUN_SCRIPT" = "test:coverage" ]; then coveralls < converage/lcov.info; fi
+  - if [ "$NPM_RUN_SCRIPT" = "test:coverage" ]; then coveralls < coverage/lcov.info; fi
