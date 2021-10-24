@@ -25,6 +25,3 @@ export function Before(callback: (this: Mocha.Context, done: Mocha.Done) => any)
 export function After(callback: (this: Mocha.Context, done: Mocha.Done) => any): void {
   after(callback)
 }
-
-import chai from 'chai'
-chai.should()

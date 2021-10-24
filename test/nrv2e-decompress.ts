@@ -1,3 +1,5 @@
+import {expect} from 'chai'
+
 import {And, Feature, Given, Scenario, Then, When} from './lib/steps.js'
 
 import nrv2eDecompress from '../src/nrv2e-decompress.js'
@@ -27,7 +29,7 @@ Feature('Test nrv2eDecompress', () => {
     })
 
     Then('output is correct', () => {
-      utf16Output.should.deep.equal(Buffer.from(b64Expected, 'base64'))
+      expect(utf16Output).to.deep.equal(Buffer.from(b64Expected, 'base64'))
     })
   })
 })
