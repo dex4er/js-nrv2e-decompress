@@ -1,3 +1,5 @@
+import {expect} from 'chai'
+
 import {And, Feature, Given, Scenario, Then, When} from './lib/steps.js'
 
 import BitReader from '../src/bit-reader.js'
@@ -22,12 +24,12 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} byte is correct`, () => {
-        byte.should.equal(n)
+        expect(byte).to.equal(n)
       })
     }
 
     And(`cannot read more bits`, () => {
-      return bits.ended.should.be.true
+      return expect(bits.ended).to.be.true
     })
   })
 
@@ -51,7 +53,7 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} bit is correct`, () => {
-        bit.should.equal((1 >> n) & 1)
+        expect(bit).to.equal((1 >> n) & 1)
       })
     }
 
@@ -60,7 +62,7 @@ Feature('Test BitReader', () => {
     })
 
     Then(`#2 byte is correct`, () => {
-      byte.should.equal(2)
+      expect(byte).to.equal(2)
     })
 
     for (let n = 7; n >= 0; n--) {
@@ -69,7 +71,7 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} bit is correct`, () => {
-        bit.should.equal((3 >> n) & 1)
+        expect(bit).to.equal((3 >> n) & 1)
       })
     }
 
@@ -78,11 +80,11 @@ Feature('Test BitReader', () => {
     })
 
     Then(`#4 byte is correct`, () => {
-      byte.should.equal(4)
+      expect(byte).to.equal(4)
     })
 
     And(`cannot read more bits`, () => {
-      return bits.ended.should.be.true
+      return expect(bits.ended).to.be.true
     })
   })
 
@@ -105,12 +107,12 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} byte is correct`, () => {
-        byte.should.equal(n)
+        expect(byte).to.equal(n)
       })
     }
 
     And(`cannot read more bits`, () => {
-      return bits.ended.should.be.true
+      return expect(bits.ended).to.be.true
     })
   })
 
@@ -134,7 +136,7 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} bit is correct`, () => {
-        bit.should.equal((0x0102 >> n) & 1)
+        expect(bit).to.equal((0x0102 >> n) & 1)
       })
     }
 
@@ -143,7 +145,7 @@ Feature('Test BitReader', () => {
     })
 
     Then(`#3 byte is correct`, () => {
-      byte.should.equal(3)
+      expect(byte).to.equal(3)
     })
 
     When(`reading #4 byte`, () => {
@@ -151,11 +153,11 @@ Feature('Test BitReader', () => {
     })
 
     Then(`#4 byte is correct`, () => {
-      byte.should.equal(4)
+      expect(byte).to.equal(4)
     })
 
     And(`cannot read more bits`, () => {
-      return bits.ended.should.be.true
+      return expect(bits.ended).to.be.true
     })
   })
 
@@ -178,12 +180,12 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} byte is correct`, () => {
-        byte.should.equal(n)
+        expect(byte).to.equal(n)
       })
     }
 
     And(`cannot read more bits`, () => {
-      return bits.ended.should.be.true
+      return expect(bits.ended).to.be.true
     })
   })
 
@@ -206,12 +208,12 @@ Feature('Test BitReader', () => {
       })
 
       Then(`#${n} bit is correct`, () => {
-        bit.should.equal((0x01020304 >> n) & 1)
+        expect(bit).to.equal((0x01020304 >> n) & 1)
       })
     }
 
     And(`cannot read more bits`, () => {
-      return bits.ended.should.be.true
+      return expect(bits.ended).to.be.true
     })
   })
 })
