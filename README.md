@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD013 -->
 
-[![Build Status](https://secure.travis-ci.org/dex4er/js-nrv2e-decompress.svg)](http://travis-ci.org/dex4er/js-nrv2e-decompress) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-nrv2e-decompress/badge.svg)](https://coveralls.io/github/dex4er/js-nrv2e-decompress) [![npm](https://img.shields.io/npm/v/nrv2e-decompress.svg)](https://www.npmjs.com/package/nrv2e-decompress)
+[![Build Status](https://api.travis-ci.com/dex4er/js-nrv2e-decompress.svg)](https://app.travis-ci.com/github/dex4er/js-nrv2e-decompress) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-nrv2e-decompress/badge.svg)](https://coveralls.io/github/dex4er/js-nrv2e-decompress) [![npm](https://img.shields.io/npm/v/nrv2e-decompress.svg)](https://www.npmjs.com/package/nrv2e-decompress)
 
 <!-- markdownlint-enable MD013 -->
 
