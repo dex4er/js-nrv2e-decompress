@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2 2024-06-21
+
+- Correct Readme badges.
+
 ## v1.0.1 2024-06-21
 
 - Requires Node >= 16.
