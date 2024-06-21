@@ -7,9 +7,12 @@ export class BitReader {
   protected currentBit = 0
   protected currentBuffer = 0
 
-  constructor(protected buffer: Buffer, protected bufferBits: BufferBits = 8) {
+  constructor(
+    protected buffer: Buffer,
+    protected bufferBits: BufferBits = 8,
+  ) {
     if (bufferBits !== 8 && bufferBits !== 16 && bufferBits !== 32) {
-      throw new Error('bufferBits should be 8, 16 or 32')
+      throw new Error("bufferBits should be 8, 16 or 32")
     }
   }
 

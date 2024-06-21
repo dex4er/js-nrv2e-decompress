@@ -1,20 +1,20 @@
-import {expect} from 'chai'
+import {expect} from "chai"
 
-import {And, Feature, Given, Scenario, Then, When} from './lib/steps.js'
+import {And, Feature, Given, Scenario, Then, When} from "./lib/steps.js"
 
-import BitReader from '../src/bit-reader.js'
+import BitReader from "../src/bit-reader.js"
 
-Feature('Test BitReader', () => {
-  Scenario('Read bytes from BitReader with 8 bit buffer', () => {
+Feature("Test BitReader", () => {
+  Scenario("Read bytes from BitReader with 8 bit buffer", () => {
     let bits: BitReader
     let buffer: Buffer
     let byte: number
 
-    Given('buffer with 4 bytes', () => {
+    Given("buffer with 4 bytes", () => {
       buffer = Buffer.from([1, 2, 3, 4])
     })
 
-    And('new BitReader object with 8 bit buffer', () => {
+    And("new BitReader object with 8 bit buffer", () => {
       bits = new BitReader(buffer, 8)
     })
 
@@ -33,17 +33,17 @@ Feature('Test BitReader', () => {
     })
   })
 
-  Scenario('Read bits and bytes from BitReader with 8 bit buffer', () => {
+  Scenario("Read bits and bytes from BitReader with 8 bit buffer", () => {
     let bit: number
     let bits: BitReader
     let buffer: Buffer
     let byte: number
 
-    Given('buffer with 4 bytes', () => {
+    Given("buffer with 4 bytes", () => {
       buffer = Buffer.from([1, 2, 3, 4])
     })
 
-    And('new BitReader object with 8 bit buffer', () => {
+    And("new BitReader object with 8 bit buffer", () => {
       bits = new BitReader(buffer, 8)
     })
 
@@ -88,16 +88,16 @@ Feature('Test BitReader', () => {
     })
   })
 
-  Scenario('Read bytes from BitReader with 16 bit buffer', () => {
+  Scenario("Read bytes from BitReader with 16 bit buffer", () => {
     let bits: BitReader
     let buffer: Buffer
     let byte: number
 
-    Given('buffer with 4 bytes', () => {
+    Given("buffer with 4 bytes", () => {
       buffer = Buffer.from([1, 2, 3, 4])
     })
 
-    And('new BitReader object with 16 bit buffer', () => {
+    And("new BitReader object with 16 bit buffer", () => {
       bits = new BitReader(buffer, 16)
     })
 
@@ -116,17 +116,17 @@ Feature('Test BitReader', () => {
     })
   })
 
-  Scenario('Read bits and bytes from BitReader with 16 bit buffer', () => {
+  Scenario("Read bits and bytes from BitReader with 16 bit buffer", () => {
     let bit: number
     let bits: BitReader
     let buffer: Buffer
     let byte: number
 
-    Given('buffer with 4 bytes', () => {
+    Given("buffer with 4 bytes", () => {
       buffer = Buffer.from([1, 2, 3, 4])
     })
 
-    And('new BitReader object with 16 bit buffer', () => {
+    And("new BitReader object with 16 bit buffer", () => {
       bits = new BitReader(buffer, 16)
     })
 
@@ -161,16 +161,16 @@ Feature('Test BitReader', () => {
     })
   })
 
-  Scenario('Read bytes from BitReader with 32 bit buffer', () => {
+  Scenario("Read bytes from BitReader with 32 bit buffer", () => {
     let bits: BitReader
     let buffer: Buffer
     let byte: number
 
-    Given('buffer with 4 bytes', () => {
+    Given("buffer with 4 bytes", () => {
       buffer = Buffer.from([1, 2, 3, 4])
     })
 
-    And('new BitReader object with 32 bit buffer', () => {
+    And("new BitReader object with 32 bit buffer", () => {
       bits = new BitReader(buffer, 32)
     })
 
@@ -189,16 +189,16 @@ Feature('Test BitReader', () => {
     })
   })
 
-  Scenario('Read bits and bytes from BitReader with 32 bit buffer', () => {
+  Scenario("Read bits and bytes from BitReader with 32 bit buffer", () => {
     let bit: number
     let bits: BitReader
     let buffer: Buffer
 
-    Given('buffer with 4 bytes', () => {
+    Given("buffer with 4 bytes", () => {
       buffer = Buffer.from([1, 2, 3, 4])
     })
 
-    And('new BitReader object with 32 bit buffer', () => {
+    And("new BitReader object with 32 bit buffer", () => {
       bits = new BitReader(buffer, 32)
     })
 

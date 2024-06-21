@@ -27,7 +27,7 @@ npm install -D @types/node
 ## Usage
 
 ```js
-import nrv2eDecompress from 'nrv2e-decompress'
+import nrv2eDecompress from "nrv2e-decompress"
 ```
 
 ### nrv2eDecompress
@@ -48,8 +48,8 @@ _Example:_
 
 ```js
 // Polish vehicle registration certificate scanned from Aztec 2D barcode
-const b64Input = 'BgQAANtYAA...'
-const binInput = Buffer.from(b64Input, 'base64')
+const b64Input = "BgQAANtYAA..."
+const binInput = Buffer.from(b64Input, "base64")
 
 // 4 first bytes in Aztec code are output length
 const outputLength = binInput.readUInt32LE(0)
@@ -58,7 +58,7 @@ const compressedInput = binInput.slice(4)
 
 nrv2eDecompress(compressedInput, utf16Output)
 
-const textOutput = utf16Output.toString('utf16le')
+const textOutput = utf16Output.toString("utf16le")
 ```
 
 ## License
