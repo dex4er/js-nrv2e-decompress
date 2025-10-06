@@ -32,7 +32,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v5
         with:
-          node-version: 24
+          node-version: 24.9.0
           package-manager-cache: false
           registry-url: https://registry.npmjs.org
 
