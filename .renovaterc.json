@@ -6,7 +6,6 @@
     "group:linters",
     "group:monorepos",
     "group:testNonMajor",
-    "group:typescript-eslintMonorepo",
     "group:allNonMajor",
     "workarounds:typesNodeVersioning"
   ],
