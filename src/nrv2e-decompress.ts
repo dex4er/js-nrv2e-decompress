@@ -16,6 +16,12 @@ export function nrv2eDecompress(input: Buffer, output: Buffer, bufferBits: Buffe
     if (bits.readBit() === 1) {
       // 1: copy next byte
 
+      // Validate bounds to prevent buffer overflow
+      if (outputPos >= output.length) {
+        throw new Error(
+          `Buffer overflow: output position exceeds buffer size (outputPos: ${outputPos}, bufferSize: ${output.length})`,
+        )
+      }
       output[outputPos++] = bits.readByte()
     } else {
       // 0: compression
