@@ -75,5 +75,6 @@
     "test:coverage": "npm run test:coverage:spec && npm run test:coverage:report",
     "test:coverage:spec": "c8 --no-clean --reporter=lcov npm run test:spec",
     "test:coverage:report": "c8 report --reporter=text-summary --color"
-  }
+  },
+  "packageManager": "npm@11.6.1+sha512.ee20d21c3a2ea7ab8c409dfbc96ae17ea71b3211745047c645aa7a36ff9a29072b2095e50a2d9c29b8fbe5606688795cc2c402cbf534cc4c0365d031e87fd56b"
 }
