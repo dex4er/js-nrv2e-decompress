@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3 2025-10-07
+
+- Prevented buffer overflow during decompression. Fixes #40.
+
 ## v1.0.2 2024-06-21
 
 - Correct Readme badges.

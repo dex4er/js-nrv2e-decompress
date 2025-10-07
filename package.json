@@ -1,6 +1,6 @@
 {
   "name": "nrv2e-decompress",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Decompress with NRV2E algorithm",
   "type": "module",
   "exports": {
