@@ -4,7 +4,7 @@
 
 [![GitHub](https://img.shields.io/github/v/release/dex4er/js-nrv2e-decompress?display_name=tag&sort=semver)](https://github.com/dex4er/js-nrv2e-decompress)
 [![CI](https://github.com/dex4er/js-nrv2e-decompress/actions/workflows/ci.yaml/badge.svg)](https://github.com/dex4er/js-nrv2e-decompress/actions/workflows/ci.yaml)
-[![Trunk Check](https://github.com/dex4er/js-nrv2e-decompress/actions/workflows/trunk.yaml/badge.svg)](https://github.com/dex4er/js-nrv2e-decompress/actions/workflows/trunk.yaml)
+[![Trunk Check](https://github.com/dex4er/js-nrv2e-decompress/actions/workflows/trunk-check.yaml/badge.svg)](https://github.com/dex4er/js-nrv2e-decompress/actions/workflows/trunk-check.yaml)
 [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-nrv2e-decompress/badge.svg)](https://coveralls.io/github/dex4er/js-nrv2e-decompress)
 [![npm](https://img.shields.io/npm/v/nrv2e-decompress.svg)](https://www.npmjs.com/package/nrv2e-decompress)
 
