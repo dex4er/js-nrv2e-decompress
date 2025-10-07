@@ -82,7 +82,7 @@ export function nrv2eDecompress(input: Buffer, output: Buffer, bufferBits: Buffe
       if (currentPos < 0 || offset > outputPos) {
         throw new Error(
           `Invalid offset: cannot reference data before current position (offset: ${offset}, outputPos: ${outputPos})`,
-        )
+        );
       }
 
       for (let i = 0; i <= length; i++) {
