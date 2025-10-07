@@ -22,7 +22,6 @@ ts-node-*
 /.tags
 /.tern-project
 
-.DS_Store
 /package-lock.json
 /yarn.lock
 

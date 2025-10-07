@@ -58,6 +58,7 @@ lint:
     - renovate
   enabled:
     - actionlint@1.7.7
+    - biome@2.2.5
     - git-diff-check
     - markdownlint@0.45.0
     - trivy@0.67.0
