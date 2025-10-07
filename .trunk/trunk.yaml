@@ -16,15 +16,50 @@ runtimes:
     - python@3.10.8
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
+  definitions:
+    # See https://github.com/trunk-io/plugins/pull/1063
+    - name: biome
+      files:
+        - astro
+        - css
+        - graphql
+        - html
+        - javascript
+        - json
+        - typescript
+      commands:
+        - output: regex
+          success_codes:
+            - 0
+            - 1
+          batch: true
+          cache_results: false
+          name: lint
+          parse_regex: ^::(?P<severity>.*) title=(?P<code>[^,]+),file=(?P<path>[^,]+),line=(?P<line>[^,]+),endLine=[^,]+,col=(?P<col>[^,]+),endColumn=[^:]+::(?P<message>.*)
+          read_output_from: stdout
+          run: biome check --config-path=${workspace}/biome.jsonc --reporter=github ${target}
+          run_from: ${root_or_parent_with(biome.jsonc)}
+        - output: regex
+          success_codes:
+            - 0
+          batch: true
+          cache_results: false
+          formatter: true
+          name: fmt
+          parse_regex: ^::(?P<severity>.*) title=(?P<code>[^,]+),file=(?P<path>[^,]+),line=(?P<line>[^,]+),endLine=[^,]+,col=(?P<col>[^,]+),endColumn=[^:]+::(?P<message>.*)
+          read_output_from: stdout
+          run: biome format --config-path=${workspace}/biome.jsonc --reporter=github --write ${target}
+          run_from: ${root_or_parent_with(biome.jsonc)}
+      run_timeout: 1m
   disabled:
+    - checkov
+    - eslint
+    - prettier
     - renovate
   enabled:
     - actionlint@1.7.7
-    - checkov@3.2.474
-    - eslint@9.37.0
     - git-diff-check
     - markdownlint@0.45.0
-    - prettier@3.6.2
     - trivy@0.67.0
     - trufflehog@3.90.8
     - yamllint@1.37.1
