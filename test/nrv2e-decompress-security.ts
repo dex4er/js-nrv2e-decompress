@@ -1,8 +1,6 @@
 import { expect } from "chai";
-
-import { And, Feature, Given, Scenario, Then, When } from "./lib/steps.js";
-
 import nrv2eDecompress from "../src/nrv2e-decompress.js";
+import { And, Feature, Given, Scenario, Then, When } from "./lib/steps.js";
 
 Feature("Test nrv2eDecompress security", () => {
   Scenario("Prevent buffer overflow with invalid offset", () => {
@@ -33,8 +31,8 @@ Feature("Test nrv2eDecompress security", () => {
 
     Then("function should throw error about buffer overflow", () => {
       expect(error).to.not.be.null;
-      expect(error!.message).to.include("Buffer overflow");
-      expect(error!.message).to.include("output position exceeds buffer size");
+      expect(error?.message).to.include("Buffer overflow");
+      expect(error?.message).to.include("output position exceeds buffer size");
     });
   });
 });
