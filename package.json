@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
-    "@tsconfig/node16": "^16.1.5",
+    "@tsconfig/node18": "^18.2.0",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
     "@types/node": "^22.18.8",
