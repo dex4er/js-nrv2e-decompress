@@ -77,5 +77,5 @@
     "trunk:fix": "npm run trunk -- check --fix",
     "trunk:fix:all": "npm run trunk -- check --fix --all"
   },
-  "packageManager": "npm@11.6.1+sha512.ee20d21c3a2ea7ab8c409dfbc96ae17ea71b3211745047c645aa7a36ff9a29072b2095e50a2d9c29b8fbe5606688795cc2c402cbf534cc4c0365d031e87fd56b"
+  "packageManager": "npm@12.2.2+sha512.2a09606d9c9a71fee31fe147b8d46a56e0b3422f15848d9aec9f3b231e3716c3d3b99a065a62175c6759b4150e03bf6fc0bf8825112a511573ba903b3ec41370"
 }
